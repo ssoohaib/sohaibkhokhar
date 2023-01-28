@@ -1,0 +1,24 @@
+@import url(./Vars.css);
+
+.thumbs-wrapper,.axis-vertical{
+    display: none;
+}
+
+.carousel-status{
+    background-color: var(--wow-color);
+    padding: .4rem 1rem!important;
+    font-size: 1rem !important;
+    font-family: sans-serif !important;
+    font-weight: 600;
+    border-radius: 1rem !important;
+    display: none;
+}
+
+.carousel .control-next.control-arrow:before{
+    border-left: 1rem solid var(--work-work-bg) !important;
+}
+
+.carousel .control-prev.control-arrow:before{
+    border-right: 1rem solid var(--work-work-bg) !important;
+
+}

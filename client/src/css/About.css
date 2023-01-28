@@ -1,0 +1,378 @@
+@import './Vars.css';
+
+.about{
+    padding-top: 13vh;
+    height: 100vh;
+    width: 75vw;
+    margin: 0 auto;
+    display: flex;
+}
+
+.about-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-heading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hollow-span{
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: var(--wow-color);
+    color: var(--nav-bg-color);
+}
+
+.about-heading>h1{
+    font-size: 15rem;
+
+    transition: font-size .2s;
+}
+
+.about-heading>h1>span{
+    transition: color .2s, -webkit-text-stroke-width .3s, -webkit-text-stroke-color .3s;
+
+}
+
+.about-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-r1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.about-r1-left{
+    width: 70%;
+}
+
+.about-r1-left>img{
+    border-radius: 2rem;
+    box-shadow: 0 0 .5rem var(--wow-color);
+    object-fit: cover;
+
+    transition: width .2s, box-shadow .2s;
+}
+
+.about-r1-left>img:hover{
+    box-shadow: 0 0 .8rem var(--wow-color);
+}
+
+.about-r1-right{
+    width: 30%;
+    margin-left: 1.5rem;
+    border-radius: 2rem;
+    background-color: var(--work-work-bg);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    transition: width .2s;
+}
+
+.about-r1-right>div>h1{
+    color: var(--work-work-h-color);
+    font-size: 2.5rem;
+
+    transition: font-size .2s;
+}
+
+.about-r1-right>div>p{
+    color: var(--work-work-p-color);
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.about-r2{
+    background-color: var(--work-work-bg);
+    border-radius: 2rem;
+    padding: 2rem;
+    margin-top: 1.5rem;
+}
+
+.about-r2>h1{
+    color: var(--work-work-h-color);
+    margin-bottom: 1.5rem;
+
+    transition: font-size .2s;
+}
+
+.about-r2>p{
+    color: var(--work-work-p-color);
+    font-size: 1.5rem;
+    line-height: 1.5;
+
+    transition: font-size .2s;
+}
+
+.about-r2>p>span{
+    color: var(--wow-color);
+}
+
+.about-r2>h1:nth-child(3){
+    margin-top: 1.5rem;
+}
+
+.about-r2>table>tr>td>i{
+    margin-right: .6rem;
+    color: var(--wow-color);
+}
+
+.about-r2>table>tr>td{
+    color: var(--work-work-p-color);
+    font-size: 1.5rem;
+    margin-right: .6rem;
+    padding: 0 .8rem .6rem 0;
+
+    transition: font-size .2s;
+}
+
+.footer{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-container>a>i{
+    color: var(--work-work-h-color);
+    
+}
+
+
+@media only screen and (min-width:1421px){
+    
+    .about{
+        width: 75vw;
+    }
+
+    .about-heading>h1{
+        font-size: 15rem;
+    }
+
+    .about-bottom{
+        width: 100%;
+    }
+
+    .about-r1{
+        width: 100%;
+    }
+
+    .about-r1-left{
+        width: 60%;
+    }
+
+    .about-r1-left>img{
+        height: 332px;
+        width: 100%;
+    }
+
+    .about-r1-right{
+        width: 40%;
+    }
+
+}
+  
+@media only screen and (min-width:1025px)and (max-width:1420.99px){
+    .about{
+        width: 95vw;
+    }
+
+    .about-heading>h1{
+        font-size: 12rem;
+    }
+
+    .about-bottom{
+        width: 100%;
+    }
+
+    .about-r1{
+        width: 100%;
+    }
+
+    .about-r1-left{
+        width: 60%;
+    }
+
+    .about-r1-left>img{
+        height: 332px;
+        width: 100%;
+    }
+
+    .about-r1-right{
+        width: 40%;
+    }
+
+    .about-r1-right>div>h1{
+        font-size: 1.5rem;
+    }
+
+    .about-r1-right>div>p{
+        font-size: 1.2rem;
+    }
+}
+  
+@media only screen and (min-width:769px)and (max-width: 1024.99px){
+    .about{
+        width: 95vw;
+    }
+
+    .about-heading>h1{
+        font-size: 10rem;
+    }
+
+    .about-r1-left{
+        width: 460px;
+    }
+
+    .about-r1-left>img{
+        height: 332px;
+        width: 410px;
+    }
+
+    .about-r1-right{
+        width:inherit;
+    }
+
+    .about-r1-right>div>h1{
+        font-size: 1.5rem;
+    }
+
+    .about-r1-right>div>p{
+        font-size: 1.2rem;
+    }
+
+    .about-r2>p{
+        font-size: 1.4rem;
+    }
+
+    .about-r2>table>tr>td>i,.about-r2>table>tr>td{
+        font-size: 1.4rem;
+    }
+}
+  
+@media only screen and (min-width:481px)and (max-width: 768.99px){
+    .about{
+        width: 95vw;
+    }
+
+    .about-container{
+        width: 100%;
+    }
+
+    .about-heading>h1{
+        font-size: 6rem;
+    }
+
+    .about-r1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+
+        margin-top: 1.5rem;
+    }
+
+    .about-r1-left{
+        width: 90vw;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-r1-left>img{
+        height: 332px;
+        width: 100%;
+    }
+
+    .about-r1-right{
+        width:90vw;
+        height: 332px;
+        margin-left: 0;
+    }
+
+    .about-r1-right>div>h1{
+        font-size: 1.8rem;
+    }
+
+    .about-r1-right>div>p{
+        font-size: 1.2rem;
+    }
+
+    .about-bottom{
+        width: 90vw;
+    }
+
+    .about-r2>p{
+        font-size: 1.2rem;
+    }
+
+    .about-r2>table>tr>td>i,.about-r2>table>tr>td{
+        font-size: 1.2rem;
+    }
+}
+  
+@media only screen and (min-width:320px)and (max-width: 480.99px){
+    .about{
+        width: 95vw;
+    }
+
+    .about-container{
+        width: 100%;
+    }
+
+    .about-heading>h1{
+        font-size: 4.5rem;
+    }
+
+    .about-r1{
+        flex-direction: column;
+        align-items: center;
+        justify-content: unset;
+
+        margin-top: 1.5rem;
+    }
+
+    .about-r1-left{
+        width: 90vw;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-r1-left>img{
+        height: 332px;
+        width: 100%;
+    }
+
+    .about-r1-right{
+        width:90vw;
+        height: 332px;
+        margin-left: 0;
+    }
+
+    .about-r1-right>div>h1{
+        font-size: 1.8rem;
+    }
+
+    .about-r1-right>div>p{
+        font-size: 1.2rem;
+    }
+
+    .about-bottom{
+        width: 90vw;
+    } 
+
+    .about-r2>p{
+        font-size: 1.2rem;
+    }
+
+    .about-r2>table>tr>td>i,.about-r2>table>tr>td{
+        font-size: .8rem;
+    }
+}
