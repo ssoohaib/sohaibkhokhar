@@ -129,7 +129,7 @@ export default function About() {
 
           <div className="footer">
             <div className="footer-container">
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.linkedin.com/in/sohaibkhokhar/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a href="mailto:work.sohaibkhokhar@gmail.com"><i class="fa-regular fa-envelope"></i></a>
             </div>
           </div>  
